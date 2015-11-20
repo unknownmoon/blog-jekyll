@@ -1,0 +1,36 @@
+{
+  "name": "blog-jekyll",
+  "version": "0.1.0",
+  "description": "Jekyll based blog generation tool of Unknown Moon",
+  "main": "''",
+  "scripts": {
+    "test": "''",
+    "init-bower-vendor": "./node_modules/.bin/bower install",
+    "jekyll-rm-posts": "rm -rf blog/_posts/;",
+    "jekyll-update-posts": "npm run-script jekyll-rm-posts; cp -r contents/posts blog/_posts;",
+    "jekyll-clean": "npm run-script jekyll-rm-posts; ./node_modules/.bin/gulp clean; ",
+    "jekyll-preview": "npm run-script jekyll-update-posts; cd blog; jekyll serve",
+    "jekyll-build": "npm run-script jekyll-update-posts; cd blog; jekyll build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://unknownmoon@github.com/unknownmoon/blog-jekyll.git"
+  },
+  "keywords": [
+    "blog",
+    "jekyll",
+    "front-end"
+  ],
+  "author": "Unknown Moon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unknownmoon/blog-jekyll/issues"
+  },
+  "homepage": "https://github.com/unknownmoon/blog-jekyll",
+  "devDependencies": {
+    "bower": "^1.6.5",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "run-sequence": "^1.1.5"
+  }
+}

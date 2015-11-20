@@ -1,0 +1,27 @@
+{
+  "name": "blog-jekyll",
+  "version": "0.1.0",
+  "homepage": "https://github.com/unknownmoon/blog-jekyll",
+  "authors": [
+    "Unknown Moon <unknownmoon@163.com>"
+  ],
+  "description": "Blog of Unknown Moon",
+  "keywords": [
+    "jekyll",
+    "front-end",
+    "blog"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "blog/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.3",
+    "PACE": "pace#~1.0.2"
+  }
+}

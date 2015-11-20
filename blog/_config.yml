@@ -1,0 +1,37 @@
+# Site settings
+cn_title: "By 某不知名少侠木 .{^~^}."
+title: "By Unknown Moon .{^~^}."
+email: "unknownmoon@163.com"
+description: "*This site is sitll under construction.*"
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://www.jinggj.me" # the base hostname & protocol for your site
+github_username:  "unknownmoon"
+author: "Unknown Moon"
+
+# Build settings
+timezone: Asia/Shanghai
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+
+sass:
+  style: :compressed
+
+# Defaults
+defaults:
+## Defaults for posts
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      categories: "others"
