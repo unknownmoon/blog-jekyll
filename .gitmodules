@@ -1,0 +1,4 @@
+[submodule "contents"]
+	path = contents
+	url = https://unknownmoon@github.com/unknownmoon/unknownmoon.blog.git
+	branch = master
